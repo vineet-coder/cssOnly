@@ -144,7 +144,7 @@
   /* margin: 1em 0rem; */
 }
 .button {
-  margin: 1rem;
+  margin: 1rem 0rem;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
@@ -163,11 +163,11 @@
 }
 
 .primary {
-  background-color: var(--blueColor);
-  border: 1px solid var(--blueColor);
+  background-color: var(--perpulColor);
+  border: 1px solid var(--perpulColor);
 }
 .primary:hover {
-  background-color: var(--blueColorHover);
+  background-color: var(--perpulColorHover);
   animation: slidebg 5s linear infinite;
 }
 .secondary {
@@ -221,30 +221,82 @@
   min-width: 300px;
   justify-content: space-around;
 }
-.img1 {
+.imgBoxSmall {
   height: 150px;
   width: 150px;
 }
-.img2 {
+.imgBoxMedium {
   height: 200px;
   width: 200px;
 }
-.img3 {
+.imgBoxLarge {
   height: 250px;
   width: 250px;
 }
-.img4 {
+.imgCircleSmall {
   border-radius: 50%;
   height: 150px;
   width: 150px;
 }
-.img5 {
+.imgCircleMedium {
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
-.img6 {
+.imgCircleLarge {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+}
+.cardComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  /* min-width: 650px; */
+  /* min-height: 600px; */
+  background-color: var(--sideNavColor);
+  /* margin: 1em 0rem; */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  justify-content: space-between;
+
+  min-width: 250px;
+  min-height: 450px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem grey;
+  padding: 2rem;
+  margin: 2rem;
+}
+.mrp {
+  text-decoration: line-through;
+  margin: 0rem 1rem;
+}
+.off {
+  color: var(--redColor);
+}
+.itemName {
+  margin: 1rem 0rem;
+}
+.cardBtnDiv {
+  display: flex;
+  margin: 0rem;
+  justify-content: space-between;
+}
+
+.cardBtn {
+  padding: 0rem;
+  height: 40px;
+  width: 100px;
+}
+
+.b {
+  /* margin: 0px 5px; */
 }
