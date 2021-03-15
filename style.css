@@ -24,17 +24,21 @@
   background-color: var(--topNavColor);
 
   /* grid-column: 1 /5; */
-  height: 200px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+}
+.topmaindiv {
+  position: relative;
+  left: 7rem;
 }
 .home {
-  position: relative;
-  left: 32rem;
-
-  top: 4rem;
+  position: absolute;
+  left: 8rem;
 }
 
 .homelink {
@@ -63,7 +67,23 @@
   position: relative;
   bottom: 1.5rem;
 }
-
+.topNavIconListDiv {
+  position: relative;
+  left: 31rem;
+}
+.topNavIconList {
+  display: flex;
+}
+.topNavListItem {
+  list-style: none;
+  padding: 0rem 1rem;
+}
+i {
+  cursor: pointer;
+}
+i:hover {
+  transform: scale(1.5);
+}
 .mainDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -258,7 +278,7 @@
 }
 .cardComponent {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: auto;
@@ -286,6 +306,13 @@
   margin: 2rem;
   position: relative;
   /* padding-top: 1rem; */
+  /* transition: all 0.3s linear; */
+  cursor: pointer;
+}
+.card:hover {
+  /* height: 300px;
+  width: 800px; */
+  transform: scale(1.02);
 }
 .mrp {
   text-decoration: line-through;
@@ -301,6 +328,7 @@
   display: flex;
   margin: 0rem;
   justify-content: space-between;
+  align-self: center;
 }
 
 .cardBtn {
@@ -309,9 +337,29 @@
   width: 100px;
 }
 .cencelBtn {
-  padding: 3px;
   position: absolute;
-  left: 285px;
+  left: 275px;
   top: 10px;
-  border-radius: 50%;
+}
+.cencelBtn:hover {
+  transform: scale(1.5);
+}
+
+.cardBackgroudImg {
+  padding: 1rem 2rem;
+  color: var(--perpulColor);
+  justify-content: flex-end;
+  background-image: url("https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/7324885/2019/12/4/f383d293-415a-4606-ab12-cc07ab603ec41575437710624-HIGHLANDER-Men-Brown--Black-Slim-Fit-Checked-Casual-Shirt-81-1.jpg");
+}
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.ImgCardBtn {
+  margin-top: 2rem;
+  height: 40px;
+  width: 200px;
 }
