@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
   --topNavColor: #6b21a8;
   --sideNavColor: #f3f4f6;
@@ -14,6 +15,10 @@
   --blackColorHover: #404040;
   --greyColor: #cccccc;
   --greyColorHover: #d9d9d9#cc0000;
+}
+body {
+  /* background-color: black; */
+  font-family: "Roboto Mono", monospace;
 }
 
 * {
@@ -87,7 +92,7 @@ i:hover {
 .mainDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: minmax(550px, auto);
+  grid-auto-rows: minmax(650px, auto);
 }
 
 .sidenav {
@@ -139,16 +144,19 @@ i:hover {
   padding: 2rem 1rem;
 }
 
-.heading1 {
+.comopnentheading {
+  font-weight: bolder;
   font-size: 36px;
-  color: white;
-  /* text-decoration: underline; */
-  /* flex-grow: 3; */
-  background-color: var(--topNavColor);
+  color: var(--topNavColor);
+  background-color: white;
   padding: 1rem 4rem;
-  border-radius: 2rem;
   margin-bottom: 4rem;
   margin-top: 2rem;
+  border-bottom: 3px solid var(--topNavColor);
+  border-top: 3px solid var(--topNavColor);
+  width: 80%;
+  border-radius: 10%;
+  text-align: center;
 }
 .imgcss {
   height: 280px;
@@ -169,6 +177,7 @@ i:hover {
   min-height: 250px;
   min-width: 250px;
   background-color: var(--sideNavColor);
+
   /* margin: 1em 0rem; */
 }
 .button {
@@ -291,28 +300,34 @@ i:hover {
 .card {
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
   justify-content: space-between;
 
   min-width: 250px;
   min-height: 450px;
-  max-width: auto;
-  max-height: auto;
+  width: 300px;
+  height: 550px;
   background-color: white;
-  /* border: 1px solid black; */
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem grey;
-  padding: 2rem;
   margin: 2rem;
   position: relative;
-  /* padding-top: 1rem; */
-  /* transition: all 0.3s linear; */
-  cursor: pointer;
 }
+
 .card:hover {
-  /* height: 300px;
-  width: 800px; */
   transform: scale(1.02);
+}
+.cardImg1 {
+  width: 100%;
+  height: 275px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cardImg2 {
+  width: 100%;
+  height: 275px;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .mrp {
   text-decoration: line-through;
@@ -326,7 +341,8 @@ i:hover {
 }
 .cardBtnDiv {
   display: flex;
-  margin: 0rem;
+
+  margin-bottom: 2rem;
   justify-content: space-between;
   align-self: center;
 }
@@ -335,23 +351,28 @@ i:hover {
   padding: 0rem;
   height: 40px;
   width: 100px;
+  margin: 0rem 1rem;
 }
 .cencelBtn {
   position: absolute;
-  left: 275px;
-  top: 10px;
+  left: 265px;
+  top: 15px;
 }
 .cencelBtn:hover {
   transform: scale(1.5);
 }
 
 .cardBackgroudImg {
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   color: var(--perpulColor);
   justify-content: flex-end;
   background-image: url("https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/7324885/2019/12/4/f383d293-415a-4606-ab12-cc07ab603ec41575437710624-HIGHLANDER-Men-Brown--Black-Slim-Fit-Checked-Casual-Shirt-81-1.jpg");
 }
 .cardDetail {
+  margin: 2rem;
+  /* padding: 2rem; */
+}
+.cardDetailbackgroundImg {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -359,7 +380,47 @@ i:hover {
   text-align: center;
 }
 .ImgCardBtn {
+  margin: 0rem 0rem;
   margin-top: 2rem;
+
   height: 40px;
   width: 200px;
+}
+.alert {
+  display: flex;
+  flex-direction: column;
+}
+.alt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  border-radius: 10px;
+  width: 500px;
+  height: 60px;
+  margin: 1.5rem 1rem;
+}
+.altIcon {
+  margin: 0rem 1rem;
+}
+.successfulAlert {
+  color: green;
+  border: 1px solid green;
+}
+.errorAlert {
+  color: var(--redColorHover);
+  border: 1px solid var(--redColorHover);
+}
+.warningAlert {
+  color: var(--redColorHover);
+  border: 1px solid var(--redColorHover);
+}
+.warningAlert {
+  color: var(--blueColor);
+  border: 1px solid var(--blueColor);
+}
+.instructionAlert {
+  color: var(--blackColorHover);
+  border: 1px solid var(--blackColorHover);
 }
