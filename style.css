@@ -144,7 +144,7 @@ i:hover {
   padding: 2rem 1rem;
 }
 
-.comopnentheading {
+.sectionheading {
   font-weight: bolder;
   font-size: 36px;
   color: var(--topNavColor);
@@ -167,6 +167,7 @@ i:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .contentSubDiv {
@@ -295,7 +296,8 @@ i:hover {
   /* min-width: 650px; */
   /* min-height: 600px; */
   background-color: var(--sideNavColor);
-  /* margin: 1em 0rem; */
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 .card {
   display: flex;
