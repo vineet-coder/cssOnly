@@ -29,6 +29,7 @@ body {
   background-color: var(--topNavColor);
 
   /* grid-column: 1 /5; */
+  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -63,7 +64,17 @@ body {
   /* background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%); */
   animation: slidebg 5s linear infinite;
 }
-
+.topnavSearch {
+  color: var(--topNavColor);
+  width: 250px;
+  height: 30px;
+  border: 1px solid var(--topNavColor);
+  border-radius: 1rem;
+  position: absolute;
+  right: 65%;
+  bottom: 35%;
+  padding: 0rem 1rem;
+}
 .heading {
   font-size: 50px;
 }
@@ -298,6 +309,7 @@ i:hover {
   background-color: var(--sideNavColor);
   margin-bottom: 2rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 .card {
   display: flex;
@@ -364,7 +376,7 @@ i:hover {
   transform: scale(1.5);
 }
 
-.cardBackgroudImg {
+.card-With-Backgroud-Img {
   /* padding: 1rem 2rem; */
   color: var(--perpulColor);
   justify-content: flex-end;
@@ -387,6 +399,19 @@ i:hover {
 
   height: 40px;
   width: 200px;
+}
+.alertComponent {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  /* min-width: 650px; */
+  /* min-height: 600px; */
+  background-color: var(--sideNavColor);
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 .alert {
   display: flex;
@@ -425,4 +450,86 @@ i:hover {
 .instructionAlert {
   color: var(--blackColorHover);
   border: 1px solid var(--blackColorHover);
+}
+.navComponent {
+  width: 100%;
+  height: 100%;
+  margin-left: 1rem;
+  padding: 1rem;
+  background-color: var(--sideNavColor);
+  margin-bottom: 6rem;
+}
+
+.nav {
+  background-color: var(--topNavColor);
+
+  grid-column: 1 /5;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+}
+.navdiv {
+  position: relative;
+  left: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navhome {
+  position: absolute;
+  right: 100%;
+}
+.navSearch {
+  color: var(--topNavColor);
+  width: 200px;
+  height: 25px;
+  border: 1px solid var(--topNavColor);
+  border-radius: 1rem;
+  position: absolute;
+  right: 77%;
+  bottom: 30%;
+  padding: 0rem 1rem;
+}
+.navIconListDiv {
+  position: relative;
+  left: 20%;
+}
+.navhomelink {
+  border: 1px solid white;
+  border-radius: 0.5rem;
+
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.navhomelink:hover {
+  background-color: var(--hovorbtnColor);
+  color: var(--btnColor);
+  animation: slidebg 5s linear infinite;
+}
+
+.navheading {
+  font-size: 50px;
+}
+.navlogo {
+  font-size: 0.5em;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.navIconList {
+  display: flex;
+}
+.navListItem {
+  list-style: none;
+  padding: 0rem 1rem;
 }
