@@ -624,3 +624,66 @@ button :focus {
 .saveBtn2:hover {
   background-color: var(--sideNavColor);
 }
+.typographyComponent {
+  width: 80%;
+  height: 100%;
+  margin-left: 1rem;
+  padding: 4rem 1rem;
+  background-color: var(--sideNavColor);
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* text-align: center; */
+}
+.h1 {
+  font-size: 4rem;
+}
+.h2 {
+  font-size: 3rem;
+}
+.h3 {
+  font-size: 2.5rem;
+}
+.h4 {
+  font-size: 1.5rem;
+}
+.h5 {
+  font-size: 1rem;
+}
+.h6 {
+  font-size: 0.5rem;
+}
+.pera {
+  font-size: 1rem;
+}
+.color-text {
+  color: red;
+  font-size: 1rem;
+}
+.listComponent {
+  width: 80%;
+  height: 100%;
+  margin-left: 1rem;
+  padding: 4rem 1rem;
+  background-color: var(--sideNavColor);
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* text-align: center; */
+}
+.list {
+  width: 30%;
+  padding: 2rem;
+  border: 1px solid black;
+  text-align: center;
+  margin: 1rem;
+}
+.non-bullet {
+  list-style: none;
+}
