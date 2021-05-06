@@ -313,10 +313,7 @@ i:hover {
   height: 250px;
   width: 250px;
 }
-input,
-button :focus {
-  outline: none;
-}
+
 .cardComponent {
   display: flex;
   /* flex-direction: column; */
