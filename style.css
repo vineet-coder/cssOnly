@@ -164,7 +164,12 @@ i:hover {
   align-items: center;
   padding: 2rem 1rem;
 }
-
+.home-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 .sectionheading {
   font-weight: bolder;
   font-size: 36px;
@@ -182,6 +187,7 @@ i:hover {
 .imgcss {
   height: 280px;
   width: 700px;
+  margin: 4rem 0rem;
 }
 
 .contentDiv {
@@ -307,10 +313,7 @@ i:hover {
   height: 250px;
   width: 250px;
 }
-input,
-button :focus {
-  outline: none;
-}
+
 .cardComponent {
   display: flex;
   /* flex-direction: column; */
